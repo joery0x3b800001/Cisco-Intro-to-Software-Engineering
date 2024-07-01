@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import './Exhibit.css';
+import './Banner.css';
 
-class Exhibit extends Component {
+class Banner extends Component {
     render() {
         return (
-            <div className="Exhibit">
-                <h2 className="ExhibitHeading">{this.props.name}</h2>
-                <div className="ExhibitContent">
-                    {this.props.children}
-                </div>
+            <div className="Banner">
+                <h1>{this.props.bannerText}</h1>
             </div>
         );
     }
 }
 
-export default Exhibit;
+export default Banner;
